@@ -173,7 +173,12 @@ function format(cc) {
   return cc.format()
 }
 
-module.exports = {
+export {
+  CacheControl,
+  parse,
+  format
+}
+export default {
   CacheControl,
   parse,
   format
