@@ -2,8 +2,10 @@
 
 > Format and parse HTTP Cache-Control header
 
-:warning: This is a fork of the original [`@tusbar/cache-control`](https://github.com/tusbar/cache-control) package which uses `export default` instead of `module.exports`
-to expose the code.
+:warning: This is a fork of the original [`@tusbar/cache-control`](https://github.com/tusbar/cache-control) package.
+
+This package uses `export default` instead of `module.exports` to expose the code and was specifically modified to be
+bundled by [`axios-cache-adapter`](https://github.com/rascarlito/axios-cache-adapter).
 
 ## Getting started
 
