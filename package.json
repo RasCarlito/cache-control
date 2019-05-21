@@ -1,5 +1,5 @@
 {
-  "name": "@rascarlito/cache-control",
+  "name": "cache-control-esm",
   "public": true,
   "version": "1.0.0",
   "description": "Format and parse HTTP Cache-Control header",
