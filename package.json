@@ -1,9 +1,10 @@
 {
-  "name": "@tusbar/cache-control",
+  "name": "@rascarlito/cache-control",
   "public": true,
-  "version": "0.3.1",
+  "version": "1.0.0",
   "description": "Format and parse HTTP Cache-Control header",
   "main": "index.js",
+  "module": "index.js",
   "scripts": {
     "test": "nyc ava"
   },
@@ -15,8 +16,11 @@
   "files": [
     "index.js"
   ],
-  "repository": "https://github.com/tusbar/cache-control",
-  "author": "Bertrand Marron <bertrand.marron@gmail.com>",
+  "repository": "https://github.com/rascarlito/cache-control",
+  "authors": [
+    "Bertrand Marron <bertrand.marron@gmail.com>",
+    "Carl Ogren <rascarlito@gmail.com>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "ava": "^1.0.1",

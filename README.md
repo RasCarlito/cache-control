@@ -1,16 +1,14 @@
-# cache-control [![CircleCI](https://circleci.com/gh/tusbar/cache-control.svg?style=svg)](https://circleci.com/gh/tusbar/cache-control)
+# cache-control
 
 > Format and parse HTTP Cache-Control header
 
-[![npm version](https://badgen.net/npm/v/@tusbar/cache-control)](https://www.npmjs.com/package/@tusbar/cache-control)
-[![dependencies Status](https://badgen.net/david/dep/tusbar/cache-control)](https://david-dm.org/tusbar/cache-control)
-[![codecov](https://badgen.net/codecov/c/github/tusbar/cache-control)](https://codecov.io/gh/tusbar/cache-control)
-[![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
+:warning: This is a fork of the original [`@tusbar/cache-control`](https://github.com/tusbar/cache-control) package which uses `export default` instead of `module.exports`
+to expose the code.
 
 ## Getting started
 
 ```bash
-$ npm install @tusbar/cache-control
+$ npm install @rascarlito/cache-control
 ```
 
 ## API
@@ -20,7 +18,7 @@ This library exposes a `CacheControl` class and two shortcut methods: `parse()` 
 ### `parse(header)`
 
 ```js
-const {parse} = require('@tusbar/cache-control')
+import { parse } from '@rascarlito/cache-control'
 ```
 
 `parse()` takes `Cache-Control` HTTP header value and returns a `CacheControl` instance.
@@ -42,13 +40,14 @@ CacheControl {
   onlyIfCached: false,
   private: false,
   proxyRevalidate: false,
-  public: true }
+  public: true
+}
 ```
 
 ### `format(cacheControl)`
 
 ```js
-const {format} = require('@tusbar/cache-control')
+import { format } from '@rascarlito/cache-control'
 ```
 
 `format()` takes a `CacheControl` instance (or similar object) and returns a `Cache-Control` HTTP header value.
